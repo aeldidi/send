@@ -59,7 +59,9 @@ function body(main) {
       </a>`;
     */
     return html`
-      <body class="flex flex-col items-center font-sans bg-grey-10 h-screen">
+      <body
+        class="flex flex-col items-center font-sans bg-pastel-green h-screen"
+      >
         ${state.cache(Header, 'header').render()} ${main(state, emit)}
       </body>
     `;

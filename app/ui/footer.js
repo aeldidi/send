@@ -72,7 +72,7 @@ class Footer extends Component {
         <ul
           class="flex flex-col md:flex-row items-start md:items-center md:justify-start"
         >
-          <li class="m-2">${translate('footerText')}</li>
+          <!--<li class="m-2">${translate('footerText')}</li>-->
         </ul>
         <ul
           class="flex flex-col md:flex-row items-start md:items-center md:justify-end"

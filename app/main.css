@@ -39,7 +39,9 @@ body {
 }
 
 .btn {
-  @apply bg-blue-60;
+  /* @apply bg-blue-60; */
+  background-color: #0a979a;
+
   @apply text-white;
   @apply cursor-pointer;
   @apply py-4;
@@ -48,11 +50,13 @@ body {
 }
 
 .btn:hover {
-  @apply bg-blue-70;
+  /* @apply bg-blue-70; */
+  background-color: #077c7e;
 }
 
 .btn:focus {
-  @apply bg-blue-70;
+  /* @apply bg-blue-70; */
+  background-color: #077c7e;
 }
 
 .checkbox {
@@ -71,6 +75,7 @@ body {
 
 .checkbox > label::before {
   /* @apply bg-grey-10; */
+
   @apply border;
   @apply rounded-sm;
 
@@ -82,17 +87,21 @@ body {
 }
 
 .checkbox > label:hover::before {
-  @apply border-blue-50;
+  /* @apply border-blue-50; */
+  background-color: #0a979a;
 }
 
 .checkbox > input:focus + label::before {
-  @apply border-blue-50;
+  /* @apply border-blue-50; */
+  background-color: #0a979a;
 }
 
 .checkbox > input:checked + label::before {
-  @apply bg-blue-50;
-  @apply border-blue-50;
+  /* @apply bg-blue-50; */
 
+  /* @apply border-blue-50; */
+  background-color: #0a979a;
+  border-color: #0a979a;
   background-image: url('../assets/lock.svg');
   background-position: center;
   background-size: 1.25rem;
@@ -104,9 +113,11 @@ body {
 }
 
 .checkbox > input:disabled + label::before {
-  @apply bg-blue-50;
-  @apply border-blue-50;
+  /* @apply bg-blue-50; */
 
+  /* @apply border-blue-50; */
+  background-color: #0a979a;
+  border-color: #0a979a;
   background-image: url('../assets/lock.svg');
   background-position: center;
   background-size: 1.25rem;
@@ -154,15 +165,18 @@ footer li a:hover {
 }
 
 .link-blue {
-  @apply text-blue-60;
+  /* @apply text-blue-60; */
+  color: #0a979a;
 }
 
 .link-blue:hover {
-  @apply text-blue-70;
+  /* @apply text-blue-70; */
+  color: #077c7e;
 }
 
 .link-blue:focus {
-  @apply text-blue-70;
+  /* @apply text-blue-70; */
+  color: #077c7e;
 }
 
 .main-header img {
@@ -213,7 +227,7 @@ progress::-webkit-progress-value {
       rgba(255, 255, 255, 0.4) 80%,
       transparent 80%
     ),
-    -webkit-linear-gradient(left, #0a84ff, #0a84ff);
+    /*-webkit-linear-gradient(left, #0a84ff, #0a84ff);*/ -webkit-linear-gradient(left, #0a979a, #0a979a);
   /* stylelint-enable */
   border-radius: 2px;
   background-size: 21px 20px, 100% 100%, 100% 100%;
@@ -233,7 +247,7 @@ progress::-moz-progress-bar {
       rgba(255, 255, 255, 0.4) 80%,
       transparent 80%
     ),
-    -moz-linear-gradient(left, #0a84ff, #0a84ff);
+    /*-moz-linear-gradient(left, #0a84ff, #0a84ff);*/ -moz-linear-gradient(left, #0a979a, #0a979a);
   /* stylelint-enable */
   border-radius: 2px;
   background-size: 21px 20px, 100% 100%, 100% 100%;
@@ -279,7 +293,7 @@ select {
 
 @screen dark {
   body {
-    @apply text-grey-10;
+    /* @apply text-grey-10; */
 
     background-image: unset;
   }

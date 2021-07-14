@@ -13,7 +13,7 @@ const colors = {
   'grey-banner': '#f0f0f4',
   'grey-transparent': 'hsla(250, 13%, 9%, .2)',
   'grey-20': '#ededf0',
-  'grey-10': '#f9f9fa',
+  'pastel-green': '#dff6f0',
   white: '#ffffff',
 
   'red-90': '#3e0200',
