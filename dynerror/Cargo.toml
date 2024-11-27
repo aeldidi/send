@@ -1,0 +1,12 @@
+[package]
+name = "dynerror"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+# Implements IntoResponse for Error to log using tracing and return HTTP 500.
+axum = ["dep:axum", "dep:tracing"]
+
+[dependencies]
+axum = { version = "0.7", optional = true }
+tracing = { version = "0.1.40", optional = true }
