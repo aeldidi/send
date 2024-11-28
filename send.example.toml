@@ -1,0 +1,15 @@
+listen_addr = "[::1]:7363"
+
+s3_bucket = "send-bucket"
+s3_endpoint = "s3.us-east-1.amazonaws.com"
+s3_access_key_id = "ACCESS_KEY_ID_GOES_HERE"
+s3_secret_key = "SUPER_SECRET_KEY_GOES_HERE"
+s3_region = "us-east-1"
+
+# In bytes. This has to be at least 5 MiB, since that's what S3 requires each
+# part to be of a multipart upload.
+upload_buffer_size = 5242880 # 5 MiB
+
+# In bytes. Must be less than upload_buffer_size * 10000, since S3 requires
+# each upload to complete in less than 10000 parts.
+upload_size_limit = 10737418240 # 10 GiB
