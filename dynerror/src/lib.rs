@@ -257,7 +257,10 @@ impl<T, E: std::error::Error + Send + Sync + 'static> Context<T>
 
 #[macro_export]
 macro_rules! bail {
-        ($($tts:tt)*) => {
-            return Err(Error::new(format!($($tts)*)))
-        };
-    }
+    ($($tts:tt)*) => {return Err(Error::new(format!($($tts)*)))};
+}
+
+#[macro_export]
+macro_rules! err {
+    ($($tts:tt)*) => {Error::new(format!($($tts)*))};
+}
